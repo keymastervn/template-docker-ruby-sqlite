@@ -1,53 +1,24 @@
-### Attention
+# README
 
-[Original](https://docs.docker.com/compose/rails/)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-> I guess I may run different web framework such as sinatra, so I will change what should be changed. However, most of the cases involve custom configs / data layer (model) / sometimes authentication (login devise) / API, who did better than rails?
+Things you may want to cover:
 
-Step 1: initialize rails
+* Ruby version
 
-```bash
-$ docker-compose run --no-deps web rails new . --force
+* System dependencies
 
-# or API only: --api
-```
+* Configuration
 
-Step 2: build the container
+* Database creation
 
-```bash
-$ docker-compose build
-```
+* Database initialization
 
-Step 3: run
+* How to run the test suite
 
-```bash
-$ docker-compose up
-```
+* Services (job queues, cache servers, search engines, etc.)
 
-You may miss something!
+* Deployment instructions
 
-#### Additional
-
-Prerequisite
-
-```bash
-$ docker-compose run web rails db:create
-
-# or rails 6, running create, migrate, seed at once: rails db:prepare
-```
-
-Run test
-
-```bash
-$ docker-compose run web rails test
-
-# or rspec: bundle exec rspec --profile 10 --format progress spec/**/*_test.rb
-```
-
-
-### Resources
-
-Useful commands
-
-- [Rails generator cheatsheet](https://gist.github.com/cdesch/2f8de645cad1d83aa251c0a20b0f7097)
-- [curl -X method -d 'name=a&age=10'](https://linux4one.com/15-curl-command-examples-in-linux)
+* ...
