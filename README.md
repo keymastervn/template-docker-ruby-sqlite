@@ -51,5 +51,6 @@ Useful commands
 
 - [Rails generator cheatsheet](https://gist.github.com/cdesch/2f8de645cad1d83aa251c0a20b0f7097)
 - [curl -X method -d 'name=a&age=10'](https://linux4one.com/15-curl-command-examples-in-linux)
+  - curl -X POST -d '{"category":{"name":"cat1", "status": true, "description":"cat1 desc"}}' -H "Content-Type: application/json" localhost:3000/categories
 - [Github Action](https://boringrails.com/articles/building-a-rails-ci-pipeline-with-github-actions/)
 
